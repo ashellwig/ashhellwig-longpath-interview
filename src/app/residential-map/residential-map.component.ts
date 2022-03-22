@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { MapInfoWindow, MapMarker } from '@angular/google-maps';
+import { GoogleMap, MapInfoWindow, MapMarker } from '@angular/google-maps';
 
 @Component({
   selector: 'app-residential-map',
@@ -8,6 +8,8 @@ import { MapInfoWindow, MapMarker } from '@angular/google-maps';
 })
 export class ResidentialMapComponent implements OnInit {
   // constructor() { }
+  @ViewChild(GoogleMap, { static: false }) map: GoogleMap;
+  @ViewChild(MapInfoWindow, { static: false }) infoWindow: MapInfoWindow;
 
   zoom = 3;
   center: google.maps.LatLngLiteral = { lat: 38.45994, lng: -99.30812 };
@@ -19,7 +21,7 @@ export class ResidentialMapComponent implements OnInit {
   };
 
   markers = [];
-  infoContent = '';
+  infoContent: string = '';
 
   markerPositions: google.maps.LatLngLiteral[] = [
     // Denver, CO
@@ -95,5 +97,16 @@ export class ResidentialMapComponent implements OnInit {
 
   click(event: google.maps.MapMouseEvent) {
     console.log(event);
+  }
+
+  logCenter() {
+    console.log(JSON.stringify(this.map.getCenter()));
+  }
+
+  openInfo(marker: MapMarker, content) {
+    content = marker.getTitle();
+    this.infoContent = content;
+    console.log(marker.marker);
+    this.infoWindow.open(marker);
   }
 }

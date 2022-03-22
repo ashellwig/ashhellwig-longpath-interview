@@ -7,15 +7,16 @@
   (mapClick)="click($event)"
 >
   <map-marker
-    #markerOptionElem
+    #markerOptionElem="mapMarker"
     *ngFor="let markerOption of markerOptions"
     [options]="markerOption"
-    (mapClick)="click($event)"
+    (mapClick)="openInfo(markerOptionElem, markerOption.title)"
   ></map-marker>
 
   <map-info-window>{{ infoContent }}</map-info-window>
 </google-map>
 
 <!-- Use custom zoom buttons -->
+<button (click)="logCenter()">Log Center</button>
 <button (click)="zoomIn()">Zoom in</button>
 <button (click)="zoomOut()">Zoom out</button>
