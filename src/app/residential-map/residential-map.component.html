@@ -13,7 +13,12 @@
     (mapClick)="openInfo(markerOptionElem, markerOption.title)"
   ></map-marker>
 
-  <map-info-window>{{ infoContent }}</map-info-window>
+  <map-info-window>
+    <!-- TODO: Dynamically Set Parameter for Link to City Info -->
+    <a href="https://google.com">
+      {{ infoContent }}
+    </a>
+  </map-info-window>
 </google-map>
 
 <!-- Use custom zoom buttons -->
