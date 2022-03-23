@@ -1,4 +1,12 @@
-<br>
+<div>
+  <h1 style="display: flex; justify-content: center; align-items: center">
+    Ashton Hellwig
+  </h1>
+  <h2 style="display: flex; justify-content: center; align-items: center">
+    States in which I Had Previously Resided
+  </h2>
+</div>
+<br />
 <google-map
   height="500px"
   width="500px"
@@ -15,14 +23,12 @@
   ></map-marker>
 
   <map-info-window>
-    <!-- TODO: Dynamically Set Parameter for Link to City Info -->
-    <a [routerLink]="'city/' + infoContent.substr(0, infoContent.indexOf(',')).toLowerCase()">
+    <a
+      [routerLink]="
+        'city/' + infoContent.substr(0, infoContent.indexOf(',')).toLowerCase()
+      "
+    >
       {{ infoContent }}
     </a>
   </map-info-window>
 </google-map>
-
-<!-- Use custom zoom buttons -->
-<button (click)="logCenter()">Log Center</button>
-<button (click)="zoomIn()">Zoom in</button>
-<button (click)="zoomOut()">Zoom out</button>
