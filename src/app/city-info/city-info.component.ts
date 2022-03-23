@@ -24,6 +24,12 @@ export class CityInfoComponent implements OnInit {
   constructor(private router: Router, private activatedRoute: ActivatedRoute) {
     this.currentCity = activatedRoute.snapshot.url[1].path;
 
+    console.log('this.currentCity = ' + this.currentCity);
+
+    if (this.currentCity == 'st. louis') {
+      this.currentCity = 'St. Louis';
+    }
+
     this.selectedCity = this.cityList.filter((city) => {
       return (
         city.cityName ==
