@@ -34,52 +34,73 @@
     "id": 1,
     "cityName": "Suwanee",
     "stateName": "Georgia",
-    "population": "0",
+    "population": "20786",
     "timeZone": {
-      "standardTime": "",
-      "daylightSavingsTime": ""
+      "standardTime": "UTC-05:00 (EST)",
+      "daylightSavingsTime": "UTC-04:00 (EDT)"
     },
-    "fipsCode": "",
-    "majorAirport": "",
-    "zipCodes": [""]
+    "fipsCode": "13-74936",
+    "majorAirport": "Hartsfield-Jackson International Airport",
+    "zipCodes": ["30024"]
   },
   {
     "id": 2,
     "cityName": "Birmingam",
     "stateName": "Alabama",
-    "population": "0",
+    "population": "200733",
     "timeZone": {
-      "standardTime": "",
-      "daylightSavingsTime": ""
+      "standardTime": "UTC-06:00 (CST)",
+      "daylightSavingsTime": "UTC-05:00 (CDT)"
     },
-    "fipsCode": "",
-    "majorAirport": "",
-    "zipCodes": [""]
+    "fipsCode": "01-07000",
+    "majorAirport": "Birmingham-Shuttlesworth International Airport",
+    "zipCodes": ["35201-35298"]
   },
   {
     "id": 3,
     "cityName": "St. Louis",
     "stateName": "Missouri",
-    "population": "0",
+    "population": "301578",
     "timeZone": {
-      "standardTime": "",
-      "daylightSavingsTime": ""
+      "standardTime": "UTC-06:00 (CST)",
+      "daylightSavingsTime": "UTC-05:00 (CDT)"
     },
-    "fipsCode": "",
-    "majorAirport": "",
-    "zipCodes": [""]
+    "fipsCode": "29-65000",
+    "majorAirport": "St. Louis Lambert International Airport",
+    "zipCodes": [
+      "63101–63141",
+      "63143–63147",
+      "63150–63151",
+      "63155–63158",
+      "63160",
+      "63163–63164",
+      "63166–63167",
+      "63169",
+      "63171",
+      "63177–63180",
+      "63182",
+      "63188",
+      "63190",
+      "63195",
+      "63197–63199"
+    ]
   },
   {
     "id": 4,
     "cityName": "Mission",
     "stateName": "Kansas",
-    "population": "0",
+    "population": "9954",
     "timeZone": {
-      "standardTime": "",
-      "daylightSavingsTime": ""
+      "standardTime": "UTC-06:00 (CST)",
+      "daylightSavingsTime": "UTC-05:00 (CDT)"
     },
-    "fipsCode": "",
-    "majorAirport": "",
-    "zipCodes": [""]
+    "fipsCode": "20-47225",
+    "majorAirport": "Kansas City International Airport",
+    "zipCodes": [
+      "66201",
+      "66202",
+      "66205",
+      "66222"
+    ]
   }
 ]
