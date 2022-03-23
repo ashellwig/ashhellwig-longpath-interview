@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import cities from '../cities.json';
 
 @Component({
   selector: 'app-city-info',
@@ -8,21 +9,27 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class CityInfoComponent implements OnInit {
   currentCity: string;
-  constructor(private router: Router, private activatedRoute: ActivatedRoute) {
-    console.log('===============');
-    console.log('Routes:');
-    console.log('---------------');
-    console.log('Array of States:');
-    console.log('---------------');
-    console.log(activatedRoute.snapshot.url);
-    console.log('---------------');
-    console.log('Path:');
-    console.log(activatedRoute.snapshot.url[1].path);
-    console.log('---------------');
-    console.log('===============');
+  cityList: {
+    cityName: String;
+    stateName: String;
+    population: String;
+    timeZone: any;
+    zipCodes: any;
+    fipsCode: String;
+    majorAirport: String;
+  }[] = cities;
+  cityInfo: any = [];
+  selectedCity: any = [];
 
+  constructor(private router: Router, private activatedRoute: ActivatedRoute) {
     this.currentCity = activatedRoute.snapshot.url[1].path;
-    console.log('Set current city to: ' + this.currentCity);
+
+    this.selectedCity = this.cityList.filter((city) => {
+      return (
+        city.cityName ==
+        this.currentCity.charAt(0).toUpperCase() + this.currentCity.slice(1)
+      );
+    });
   }
 
   ngOnInit(): void {}

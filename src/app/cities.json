@@ -3,7 +3,7 @@
     "id": 0,
     "cityName": "Denver",
     "stateName": "Colorado",
-    "population": 715522,
+    "population": "715522",
     "timeZone": {
       "standardTime": "UTC-07:00 (MST)",
       "daylightSavingsTime": "UTC-06:00 (MDT)"
@@ -34,7 +34,7 @@
     "id": 1,
     "cityName": "Suwanee",
     "stateName": "Georgia",
-    "population": 0,
+    "population": "0",
     "timeZone": {
       "standardTime": "",
       "daylightSavingsTime": ""
@@ -47,7 +47,7 @@
     "id": 2,
     "cityName": "Birmingam",
     "stateName": "Alabama",
-    "population": 0,
+    "population": "0",
     "timeZone": {
       "standardTime": "",
       "daylightSavingsTime": ""
@@ -60,7 +60,7 @@
     "id": 3,
     "cityName": "St. Louis",
     "stateName": "Missouri",
-    "population": 0,
+    "population": "0",
     "timeZone": {
       "standardTime": "",
       "daylightSavingsTime": ""
@@ -73,7 +73,7 @@
     "id": 4,
     "cityName": "Mission",
     "stateName": "Kansas",
-    "population": 0,
+    "population": "0",
     "timeZone": {
       "standardTime": "",
       "daylightSavingsTime": ""

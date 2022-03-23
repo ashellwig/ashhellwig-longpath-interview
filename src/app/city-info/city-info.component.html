@@ -1,6 +1,53 @@
 <!-- <h1>Information for {{ selectedCity$ | async }}</h1> -->
-<p>CityInfoComponent Works!</p>
+<div>
+  <div *ngFor="let city of selectedCity">
+    <h2>Information Regarding the city of {{ city.cityName }}</h2>
+    <div class="basicInfo">
+      <!-- Basic Information -->
+      <h3>Basic Info</h3>
+      <div><strong>City Name:</strong> {{ city.cityName }}</div>
+      <div>
+        <div><strong>State Name:</strong> {{ city.stateName }}</div>
+      </div>
+    </div>
+    <!-- Population Information -->
+    <div class="populationInfo">
+      <h3>Population Information</h3>
+      <div>
+        <div><strong>Population:</strong> {{ city.population }}</div>
+      </div>
+    </div>
+    <!-- Timezone Information -->
+    <div class="timezoneInfo">
+      <h3>Timezone</h3>
+      <div>
+        <div class="standardTimezone">{{ city.timeZone.standardTime }}</div>
+        <div class="daylightSavingsTimezone">
+          {{ city.timeZone.daylightSavingsTime }}
+        </div>
+      </div>
+    </div>
+    <!-- Zip Codes -->
+    <!-- TODO: Fix ZipCode Rendering -->
+    <div class="zipCodeInfo">
+      <h3>Zip Codes</h3>
+      <ul *ngFor="let zipCode of city.zipCodes">
+        <li>{{zipCode}}</li>
+      </ul>
+    </div>
+    <!-- FIPS Code -->
+    <div class="fipsCodeInfo">
+      <h3>Federal Information Processing Standards Information</h3>
+      <div><strong>FIPS Code: </strong> {{ city.fipsCode }}</div>
+    </div>
+    <!-- Major Airport -->
+    <div class="majorAirportInfo">
+      <h3>Airport Information</h3>
+      <div><strong>Major Airport: </strong> {{ city.majorAirport }}</div>
+    </div>
+  </div>
 
-<div class="backBtn">
-    <button [routerLink]="'/'">Return to Home Page</button>
+  <div>
+    <button class="activebutton" [routerLink]="'/'">Return to Home Page</button>
+  </div>
 </div>
