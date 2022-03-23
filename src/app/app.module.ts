@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { ResidentialMapComponent } from './residential-map/residential-map.component';
 import { CityInfoComponent } from './city-info/city-info.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 // import CitiesJson from './cities.json';
 
@@ -26,7 +27,7 @@ interface CITIES {
 }
 
 @NgModule({
-  declarations: [AppComponent, ResidentialMapComponent, CityInfoComponent],
+  declarations: [AppComponent, ResidentialMapComponent, CityInfoComponent, PageNotFoundComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
