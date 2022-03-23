@@ -5,10 +5,25 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-// import { ResidentialMapComponent } from './residential-map/residential-map.component';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { ResidentialMapComponent } from './residential-map/residential-map.component';
 import { CityInfoComponent } from './city-info/city-info.component';
+
+// import CitiesJson from './cities.json';
+
+interface CITIES {
+  id: Number;
+  cityName: String;
+  stateName: String;
+  population: Number;
+  timezone: {
+    standardTime: String;
+    daylightSavingsTime: String;
+  };
+  zipCodes: String[];
+  fipsCode: String;
+  majorAirport: String;
+}
 
 @NgModule({
   declarations: [AppComponent, ResidentialMapComponent, CityInfoComponent],

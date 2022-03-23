@@ -1,0 +1,85 @@
+[
+  {
+    "id": 0,
+    "cityName": "Denver",
+    "stateName": "Colorado",
+    "population": 715522,
+    "timeZone": {
+      "standardTime": "UTC-07:00 (MST)",
+      "daylightSavingsTime": "UTC-06:00 (MDT)"
+    },
+    "zipCodes": [
+      "80201-80212",
+      "80214-80239",
+      "80241",
+      "80243-80244",
+      "80246-80252",
+      "80256-80266",
+      "80271",
+      "80273-80274",
+      "80279-80281",
+      "80290-80291",
+      "80293-80295",
+      "80299",
+      "80012",
+      "80014",
+      "80022",
+      "80033",
+      "80123"
+    ],
+    "fipsCode": "08-20000",
+    "majorAirport": "Denver International Airport"
+  },
+  {
+    "id": 1,
+    "cityName": "Suwanee",
+    "stateName": "Georgia",
+    "population": 0,
+    "timeZone": {
+      "standardTime": "",
+      "daylightSavingsTime": ""
+    },
+    "fipsCode": "",
+    "majorAirport": "",
+    "zipCodes": [""]
+  },
+  {
+    "id": 2,
+    "cityName": "Birmingam",
+    "stateName": "Alabama",
+    "population": 0,
+    "timeZone": {
+      "standardTime": "",
+      "daylightSavingsTime": ""
+    },
+    "fipsCode": "",
+    "majorAirport": "",
+    "zipCodes": [""]
+  },
+  {
+    "id": 3,
+    "cityName": "St. Louis",
+    "stateName": "Missouri",
+    "population": 0,
+    "timeZone": {
+      "standardTime": "",
+      "daylightSavingsTime": ""
+    },
+    "fipsCode": "",
+    "majorAirport": "",
+    "zipCodes": [""]
+  },
+  {
+    "id": 4,
+    "cityName": "Mission",
+    "stateName": "Kansas",
+    "population": 0,
+    "timeZone": {
+      "standardTime": "",
+      "daylightSavingsTime": ""
+    },
+    "fipsCode": "",
+    "majorAirport": "",
+    "zipCodes": [""]
+  }
+]

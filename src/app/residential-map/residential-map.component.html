@@ -1,3 +1,4 @@
+<br>
 <google-map
   height="500px"
   width="500px"
@@ -15,7 +16,7 @@
 
   <map-info-window>
     <!-- TODO: Dynamically Set Parameter for Link to City Info -->
-    <a href="https://google.com">
+    <a [routerLink]="'city/' + infoContent.substr(0, infoContent.indexOf(',')).toLowerCase()">
       {{ infoContent }}
     </a>
   </map-info-window>
