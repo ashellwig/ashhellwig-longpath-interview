@@ -10,29 +10,23 @@ import { ResidentialMapComponent } from './residential-map/residential-map.compo
 import { CityInfoComponent } from './city-info/city-info.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
-// import CitiesJson from './cities.json';
-
-interface CITIES {
-  id: Number;
-  cityName: String;
-  stateName: String;
-  population: Number;
-  timezone: {
-    standardTime: String;
-    daylightSavingsTime: String;
-  };
-  zipCodes: String[];
-  fipsCode: String;
-  majorAirport: String;
-}
+import { MatButtonModule } from '@angular/material/button';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 @NgModule({
-  declarations: [AppComponent, ResidentialMapComponent, CityInfoComponent, PageNotFoundComponent],
+  declarations: [
+    AppComponent,
+    ResidentialMapComponent,
+    CityInfoComponent,
+    PageNotFoundComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     GoogleMapsModule,
+    MatButtonModule,
+    MatExpansionModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
